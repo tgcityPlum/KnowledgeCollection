@@ -1,9 +1,9 @@
 # 静态块companion
 
-## 1 简介
+## 简介
 在kotlin中，同样是有静态块，较之java的不同，kotlin的写法比较独立
 
-## 2 用法
+## 用法
 常见的写法如下
 ```
 companion object{

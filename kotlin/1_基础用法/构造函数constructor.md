@@ -1,4 +1,4 @@
-# constructor用法
+# 构造函数constructor
 
 ## 1 简介
 constructor是用来创建构造函数，常见的方式有*primary constructor*和*secondary constructor*

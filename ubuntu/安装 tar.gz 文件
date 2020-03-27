@@ -1,0 +1,9 @@
+# 安装 tar.gz 文件
+
+## 操作步骤
+
+* 解压：tar zxvf FileName.tar.gz
+* 打开文件：cd FileName
+* 配置：./configure
+* 编译： make
+* 安装： sudo make install

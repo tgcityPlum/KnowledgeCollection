@@ -1,0 +1,15 @@
+# 将软件放到Applications中
+
+# 操作步骤
+
+* 准备好软件的安装位置和软件图标
+* 打开终端，输入*cd /usr/share/applications*
+* 创建启动文件，*sudo gedit xx.desktop*
+* 填充内容
+```
+[Desktop Entry]    
+Name=eclipse   
+Type=Application    
+Exec=/usr/share/eclipse/eclipse 即安装位置   
+Icon=/usr/share/eclipse/icon.xpm 安装位置图标所在路径
+```

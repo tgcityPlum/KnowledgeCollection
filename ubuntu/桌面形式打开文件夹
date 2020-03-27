@@ -1,0 +1,5 @@
+# 桌面形式打开文件夹
+
+## 操作方法
+
+打开终端，输入*nautilus /usr/sahre/applications*即可以桌面的形式显示

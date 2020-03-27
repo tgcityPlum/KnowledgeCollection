@@ -1,0 +1,5 @@
+# 卸载软件
+
+## 操作步骤
+
+打开终端，输入*dpkg --get-selections |grep firefox*,这里以firefox举例，然后在终端会列出所有安装的小包，接着输入*sudo apt-get purge firefox firefox-locale-en*即可

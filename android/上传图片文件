@@ -1,0 +1,22 @@
+# 上传图片文件
+## 说明
+有时候后台会让我们上传图片，例如fileList,array[file]类型，一般的写法如下：
+```
+/**
+   * 学生基础信息图片上传
+   */
+  @Multipart
+  @POST("api/place/school/student/base/upload")
+  Observable<BaseResponse<List<CommonMediaFile>>> studentBaseUpload(@Part List<MultipartBody.Part> imageFiles, @Query("placeId") String placeId);
+
+
+  List<MultipartBody.Part> fileList = new ArrayList<>();
+             for (ImageItem item : imageItemList) {
+                 File file = ImageUtil.getCompressFile(this, item.path);
+                 if (file != null) {
+                     RequestBody requestFile = RequestBody.create(MediaType.parse("image/jpeg"), file);
+                     MultipartBody.Part part = MultipartBody.Part.createFormData("fileList", file.getName(), requestFile);
+                     fileList.add(part);
+                 }
+             }
+```
